@@ -52,6 +52,10 @@ const ToDo = () => {
 
     const handleDelete = (id) => {
         setTodos(todos.filter((item) => item.id !== id));
+        if (editId === id) {
+            setTodo('')
+            setEditId(0)
+        }
         toast.success('Task has been deleted');
     };
 
