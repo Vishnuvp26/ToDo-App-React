@@ -3,7 +3,6 @@ import './ToDo.css';
 import { MdDelete } from "react-icons/md";
 import { IoMdDoneAll } from "react-icons/io";
 import { FiEdit } from "react-icons/fi";
-// import { ToastContainer, toast } from 'react-toastify';
 import toast, { Toaster } from 'react-hot-toast';
 import 'react-toastify/dist/ReactToastify.css';
 import Form from './Form';
