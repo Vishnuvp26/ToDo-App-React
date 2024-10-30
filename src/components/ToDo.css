@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/public/BG.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 40%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #2e2e2e, #252525);
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    margin: 20px 0;         
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;           
+    width: 70%;             
+}
+
+button {
+    margin-left: 10px; 
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;     
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.list {
+    margin-top: 30px !important;
+}
+
+li {
+    margin-bottom: 15px;
+    margin-left: -12px;
+    background-color: rgba(11, 11, 11, 0.805) !important;
+    color: white !important;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.list-items .list-item-icons { 
+    padding-left: 3px;
+    font-size: 20px;
+    margin-left: 10px; 
+}
+
+#complete {
+    color: rgb(0, 162, 0);
+}
+
+#edit {
+    color: aqua;
+}
+
+#delete {
+    color: orange;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px 20px;
+        margin-top: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    li {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-items {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-items .list-item-icons {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
